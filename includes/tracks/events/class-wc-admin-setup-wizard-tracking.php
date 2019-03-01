@@ -58,10 +58,10 @@ class WC_Admin_Setup_Wizard_Tracking {
 			} );
 			$( '.wc-setup-content a' ).click( function trackNextScreen( e ) {
 				var properties = {
-					href: e.target.href,
+					next_url: e.target.href,
 					button: e.target.textContent && e.target.textContent.trim()
 				};
-				window.wcTracks.recordEvent( 'obw_ready_next step', properties );
+				window.wcTracks.recordEvent( 'obw_ready_next_step', properties );
 			} );
 		"
 		);
